@@ -382,7 +382,7 @@ class TwitterOAuth extends Config
             $options[CURLOPT_CAINFO] = __DIR__ . DIRECTORY_SEPARATOR . 'cacert.pem';
         }
 
-        if($this->gzipEncoding) {
+        if ($this->gzipEncoding) {
             $options[CURLOPT_ENCODING] = 'gzip';
         }
 
@@ -404,7 +404,6 @@ class TwitterOAuth extends Config
      * @param string $method
      * @param string $authorization
      * @param array $postfields
-     * @param bool  $json
      *
      * @return string
      * @throws TwitterOAuthException
